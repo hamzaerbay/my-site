@@ -128,3 +128,11 @@ p{
   border-bottom: 36px solid #F65A5B;
   transform: rotate(18deg);
 }
+
+@media screen and (max-width: 768px) {
+  .box--one,
+  .box--two{
+    width: 150px;
+    height: 150px;
+  }
+}
