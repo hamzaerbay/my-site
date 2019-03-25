@@ -28,6 +28,30 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-8863328-2",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Enables Google Optimize using your container Id
+        optimizeId: "UA-8863328-2",
+        // Enables Google Optimize Experiment ID
+        experimentId: "UA-8863328-2",
+        // Set Variation ID. 0 for original 1,2,3....
+        variationId: "UA-8863328-2",
+        // Any additional create only fields (optional)
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "example.com",
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
