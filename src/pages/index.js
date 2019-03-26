@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import runCanvas from '../utils/canvas';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 import twitterIcon from '../assets/twitter.svg';
 import facebookIcon from '../assets/facebook.svg';
 import dribbbleIcon from '../assets/dribbble.svg';
