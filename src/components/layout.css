@@ -65,10 +65,10 @@ body{
     font-size: 48px;
   }
   p{
-    font-weight: 800;
+    font-weight: 900;
     margin: 10px 0;
     font-size: 19px;
-    letter-spacing: 3.6px;
+    letter-spacing: 2.6px;
   }
   .contacts{
     list-style: none;

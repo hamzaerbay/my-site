@@ -46,7 +46,7 @@ module.exports = {
           {
             family: `Source Sans Pro`,
             subsets: [`latin`],
-            variants: [`200`, `400`, `700`]
+            variants: [`200`, `400`, `700`,`900`]
           },
         ],
       },
