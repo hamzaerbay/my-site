@@ -5,6 +5,12 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 import runCanvas from '../utils/canvas';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import twitterIcon from '../assets/twitter.svg';
+import facebookIcon from '../assets/facebook.svg';
+import dribbbleIcon from '../assets/dribbble.svg';
+import linkedinIcon from '../assets/linkedin.svg';
+import mediumIcon from '../assets/medium.svg';
+import githubIcon from '../assets/github.svg';
 
 class IndexPage extends Component {
   componentDidMount(){
@@ -22,32 +28,44 @@ class IndexPage extends Component {
     <ul className="contacts">
         <li>
           <OutboundLink href="https://www.facebook.com/HamzaErbay" target="_blank">
-            <i className="fa fa-facebook" aria-hidden="true"></i>
+            <svg className="facebook icon">
+              <use xlinkHref={`#${facebookIcon.id}`} />
+            </svg>
           </OutboundLink>
         </li>
         <li>
           <OutboundLink href="https://twitter.com/hamzaerbay" target="_blank">
-            <i className="fa fa-twitter" aria-hidden="true"></i>
+            <svg className="twitter icon">
+              <use xlinkHref={`#${twitterIcon.id}`} />
+            </svg>
           </OutboundLink>
         </li>
         <li>
           <OutboundLink href="https://dribbble.com/hamzaerbay" target="_blank">
-            <i className="fa fa-dribbble" aria-hidden="true"></i>
+            <svg className="dribbble icon">
+              <use xlinkHref={`#${dribbbleIcon.id}`} />
+            </svg>
           </OutboundLink>
         </li>
         <li>
           <OutboundLink href="https://www.linkedin.com/in/hamzaerbay/" target="_blank">
-            <i className="fa fa-linkedin" aria-hidden="true"></i>
+            <svg className="linkedin icon">
+              <use xlinkHref={`#${linkedinIcon.id}`} />
+            </svg>
           </OutboundLink>
         </li>
         <li>
           <OutboundLink href="https://github.com/hamzaerbay/" target="_blank">
-            <i className="fa fa-github" aria-hidden="true"></i>
+            <svg className="github icon">
+              <use xlinkHref={`#${githubIcon.id}`} />
+            </svg>
           </OutboundLink>
         </li>
         <li>
           <OutboundLink href="https://medium.com/@hamzaerbay" target="_blank">
-            <i className="fa fa-medium" aria-hidden="true"></i>
+            <svg className="medium icon">
+              <use xlinkHref={`#${mediumIcon.id}`} />
+            </svg>
           </OutboundLink>
         </li>
     </ul>

@@ -141,3 +141,8 @@ body{
       right: -20%;
     }
   }
+  .icon {
+    width: 22px;
+    height: 22px;
+    fill: #415164;
+  }
