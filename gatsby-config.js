@@ -38,7 +38,7 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Enables Google Optimize using your container Id
         optimizeId: "UA-8863328-2",
         // Enables Google Optimize Experiment ID
@@ -48,16 +48,20 @@ module.exports = {
         // Any additional create only fields (optional)
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        // cookieDomain: "hamzaerbay.com",
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ['Source Sans Pro']
-        }
-      }
+        fonts: [
+          {
+            family: `Source Sans Pro`,
+            subsets: [`latin`],
+            variants: [`200`, `400`, `700`]
+          },
+        ],
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
