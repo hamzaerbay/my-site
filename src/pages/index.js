@@ -27,42 +27,42 @@ class IndexPage extends Component {
     <p>FRONT END DEVELOPER</p>
     <ul className="contacts">
         <li>
-          <OutboundLink href="https://www.facebook.com/HamzaErbay" target="_blank">
+          <OutboundLink href="https://www.facebook.com/HamzaErbay">
             <svg className="facebook icon">
               <use xlinkHref={`#${facebookIcon.id}`} />
             </svg>
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink href="https://twitter.com/hamzaerbay" target="_blank">
+          <OutboundLink href="https://twitter.com/hamzaerbay">
             <svg className="twitter icon">
               <use xlinkHref={`#${twitterIcon.id}`} />
             </svg>
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink href="https://dribbble.com/hamzaerbay" target="_blank">
+          <OutboundLink href="https://dribbble.com/hamzaerbay">
             <svg className="dribbble icon">
               <use xlinkHref={`#${dribbbleIcon.id}`} />
             </svg>
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink href="https://www.linkedin.com/in/hamzaerbay/" target="_blank">
+          <OutboundLink href="https://www.linkedin.com/in/hamzaerbay/">
             <svg className="linkedin icon">
               <use xlinkHref={`#${linkedinIcon.id}`} />
             </svg>
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink href="https://github.com/hamzaerbay/" target="_blank">
+          <OutboundLink href="https://github.com/hamzaerbay/">
             <svg className="github icon">
               <use xlinkHref={`#${githubIcon.id}`} />
             </svg>
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink href="https://medium.com/@hamzaerbay" target="_blank">
+          <OutboundLink href="https://medium.com/@hamzaerbay">
             <svg className="medium icon">
               <use xlinkHref={`#${mediumIcon.id}`} />
             </svg>
