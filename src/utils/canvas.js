@@ -74,7 +74,6 @@ function init() {
 		particles.push(new Particle(canvas.width/ 2,
 			canvas.height / 2 - 102, radius, randomColor(colors)));
 	}
-	console.log(particles);
 }
 
 // Animation Loop
