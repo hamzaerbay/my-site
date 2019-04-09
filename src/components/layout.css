@@ -81,11 +81,10 @@ body{
   }
   .contacts li a{
     font-size: 22px;
-    transition: .6s ease-out;
     color:#415164;
   }
-  .contacts li a:hover{
-    opacity: .5;
+  .contacts li a:hover .icon{
+    fill: #ff6e61;
   }
   .box{
     display: block;
@@ -148,4 +147,5 @@ body{
     width: 22px;
     height: 22px;
     fill: #415164;
+    transition: .6s ease-out;
   }

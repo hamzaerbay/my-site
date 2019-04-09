@@ -7,9 +7,9 @@ canvas.width = innerWidth;
 canvas.height = innerHeight;
 
 const colors = [
-	'#00bdff',
-	'#4d39ce',
-	'#088eff'
+	'#ff6e61',
+	'#ffc45b',
+	'#f64d75'
 ];
 
 addEventListener('resize', () => {
@@ -72,7 +72,7 @@ function init() {
 	for (let i = 0; i < 10; i++) {
 		const radius = (Math.random() * 2) + 1;
 		particles.push(new Particle(canvas.width/ 2,
-			canvas.height / 2 - 102, radius, randomColor(colors)));
+			canvas.height / 2 - 106, radius, randomColor(colors)));
 	}
 }
 
