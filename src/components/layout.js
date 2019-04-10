@@ -26,7 +26,6 @@ const Layout = ({ children }) => (
       <>
         <div className="wrapper">
           <main>{children}</main>
-        
         </div>
       </>
     )}

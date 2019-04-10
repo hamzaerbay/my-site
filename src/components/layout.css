@@ -44,7 +44,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border:1px solid #E1E1E1;
+    border:1px solid #fc6440;
     display: block;
     border-radius: 50%;
     z-index: -1;
@@ -53,11 +53,18 @@ body{
     width:192px;
     height: 192px;
     opacity: .6;
+    animation: pulse 1.5s ease-in-out alternate infinite;
   }
   .avatar::after{
     width: 248px;
     height: 248px;
     opacity: .4;
+    animation: pulse 1.5s .75s ease-in-out alternate infinite;
+  }
+  @keyframes pulse {
+    from {opacity: .4;}
+    to {opacity: 0;
+    }
   }
   h1{
     font-weight: 100;
