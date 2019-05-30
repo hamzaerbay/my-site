@@ -11,7 +11,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: `${ __dirname }/src/images`,
       },
     },
     'gatsby-transformer-sharp',
@@ -44,9 +44,9 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Source Sans Pro`,
+            family: `Open Sans`,
             subsets: [`latin`],
-            variants: [`200`, `400`, `700`,`900`]
+            variants: [`200`, `400`, `700`, `900`],
           },
         ],
       },
@@ -55,4 +55,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
   ],
-};
+}

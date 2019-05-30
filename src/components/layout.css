@@ -1,8 +1,10 @@
 body{
     background-color: #F9FAFB;
+    /*background:linear-gradient(to right, #fcece2, #f8f6f5);*/
+    /*background:#fcece2;*/
     color: #415164;
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
   }
   canvas{
@@ -67,12 +69,15 @@ body{
     }
   }
   h1{
-    font-weight: 100;
-    margin: 55px 0 18px;
+    font-weight: 700;
+    margin-top: 55px;
+    margin-bottom: 0;
+    text-transform: uppercase;
     font-size: 48px;
   }
   p{
-    font-weight: 900;
+    font-weight: 100;
+    text-align: right;
     margin: 10px 0;
     font-size: 19px;
     letter-spacing: 2.6px;

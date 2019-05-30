@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "eslint-plugin-react-hooks": "^1.6.0",
     "gatsby": "^2.2.5",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-gtag": "^1.0.10",
@@ -23,6 +24,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "eslint-config-react-app": "^4.0.1",
     "prettier": "^1.16.4"
   },
   "keywords": [
