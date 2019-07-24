@@ -7,7 +7,7 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-  }
+  
   canvas{
     position: absolute;
     z-index: -1;
