@@ -22,6 +22,7 @@ class IndexPage extends Component {
         <SEO
           title="Hamza Erbay"
           keywords={[
+            'software engineer',
             'front-end developer',
             'design system',
             'react developer',
@@ -34,7 +35,7 @@ class IndexPage extends Component {
           <Image alt="hamza erbay" />
         </div>
         <h1>Hamza Erbay</h1>
-        <p>FRONT END DEVELOPER</p>
+        <p>SOFTWARE ENGINEER</p>
         <ul className="contacts">
           <li>
             <OutboundLink href="https://www.facebook.com/HamzaErbay">
