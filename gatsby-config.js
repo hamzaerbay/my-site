@@ -6,12 +6,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-svg-sprite',
+    // 'gatsby-plugin-svg-sprite',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${ __dirname }/src/images`,
+        path: `${__dirname}/src/images`,
       },
     },
     'gatsby-transformer-sharp',
@@ -40,15 +40,25 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Open Sans`,
-            subsets: [`latin`],
-            variants: [`200`, `400`, `700`, `900`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Open Sans`,
+              subsets: [`latin`],
+              variants: [`200`, `400`, `700`, `900`],
+            },
+          ],
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
