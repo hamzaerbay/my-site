@@ -6,7 +6,6 @@ import SEO from '../components/seo'
 import runCanvas from '../utils/canvas'
 import { OutboundLink } from 'gatsby-plugin-gtag'
 import TwitterIcon from '../assets/twitter.svg'
-import FacebookIcon from '../assets/facebook.svg'
 import DribbbleIcon from '../assets/dribbble.svg'
 import LinkedinIcon from '../assets/linkedin.svg'
 import MediumIcon from '../assets/medium.svg'
@@ -38,11 +37,6 @@ class IndexPage extends Component {
         <h1>Hamza Erbay</h1>
         <p>SOFTWARE ENGINEER</p>
         <ul className='contacts'>
-          <li>
-            <OutboundLink href='https://www.facebook.com/HamzaErbay'>
-              <FacebookIcon className='facebook icon' />
-            </OutboundLink>
-          </li>
           <li>
             <OutboundLink href='https://twitter.com/hamzaerbay'>
               <TwitterIcon className='twitter icon' />
