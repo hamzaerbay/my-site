@@ -1,49 +1,27 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "hamzaerbay.com",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "gatsby": "^4.16.0",
-    "gatsby-image": "^3.3.0",
-    "gatsby-plugin-gtag": "^1.0.11",
-    "gatsby-plugin-manifest": "^4.16.0",
-    "gatsby-plugin-offline": "^5.16.0",
-    "gatsby-plugin-react-helmet": "^5.16.0",
-    "gatsby-plugin-react-svg": "^3.0.1",
-    "gatsby-plugin-sharp": "^4.16.1",
-    "gatsby-plugin-svg-sprite": "^2.0.1",
-    "gatsby-plugin-webfonts": "^2.1.0",
-    "gatsby-source-filesystem": "^4.16.0",
-    "gatsby-transformer-sharp": "^4.16.0",
-    "prop-types": "^15.7.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0"
+    "@next/font": "^13.0.4",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.4",
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "typescript": "4.9.3"
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "svg-sprite-loader": "^6.0.5"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "sass": "^1.56.1"
   }
 }
