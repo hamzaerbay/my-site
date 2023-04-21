@@ -12,6 +12,7 @@ export function SEO({ description, title, siteTitle, twitterCreator }: SEOTypes)
       <title>{`${title} | ${siteTitle}`}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content="Hamza Erbay is a software engineer specializing in Typescript, Node.js, Python, and React development. Contact him today to build your next web application." />
+      <meta name="google-site-verification" content="xHZco453ZZ0uKLF-ZrUJjaihjYavj8Tc47OzSXAmhVQ" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
