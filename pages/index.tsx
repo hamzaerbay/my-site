@@ -1,10 +1,11 @@
 import { useEffect } from "react"
-import Head from 'next/head'
 import runCanvas from "../lib/canvas"
 import Image from 'next/image'
 import styles from '../styles/my-page.module.scss'
 import { SiMedium, SiTwitter, SiLinkedin, SiGithub, SiDribbble } from "react-icons/si";
 import Link from 'next/link'
+import React from "react"
+import { SEO } from '../components/seo'
 
 
 export default function Home() {
@@ -12,12 +13,11 @@ export default function Home() {
     runCanvas()
   }, [])
   return <div className={styles.wrapper}>
-    <Head>
-        <title>Hamza Erbay</title>
-        <meta name="description" content="Developer, Designer making something awesome :)" />
-        <link rel="icon" href="/favicon-2.ico" />
-      </Head>
-
+    <SEO
+      description="Expert software engineer specializing in Python, TypeScript, and React. Build scalable backends, dynamic interfaces, and optimize existing systems."
+      siteTitle="Software Engineer"
+      title="Hamza Erbay"
+    />
     <main>
       <div className={styles.avatar}>
         <Image src="/hamza-erbay-avatar.jpg" alt='hamza erbay' width={144} height={144} className={styles.img} loading="lazy" priority={false} />
@@ -42,10 +42,10 @@ export default function Home() {
         </li>
       </ul>
 
-      <div className={styles['box--one']}/>
-      <div className={styles['box--two']}/>
-      <div className={styles['box--three']}/>
-      <div className={styles['box--four']}/>
+      <div className={styles['box--one']} />
+      <div className={styles['box--two']} />
+      <div className={styles['box--three']} />
+      <div className={styles['box--four']} />
       <canvas className={styles.canvas} />
     </main>
   </div>
