@@ -37,7 +37,7 @@ const createParticle = (x: number, y: number, colors: string[]): Particle => {
 
 const init = (canvas: HTMLCanvasElement, colors: string[]) => {
   const particles: Particle[] = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i <6; i++) {
     particles.push(createParticle(canvas.width / 2, canvas.height / 2 - 106, colors));
   }
   return particles;
