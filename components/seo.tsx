@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import React from 'react'
-
-export function SEO({ description, title, siteTitle, twitterCreator = '@hamzaerbay' }) {
+interface SEOTypes {
+  description: string;
+  title: string;
+  siteTitle: string;
+  twitterCreator: string;
+}
+export function SEO({ description, title, siteTitle, twitterCreator }: SEOTypes) {
   return (
     <Head>
       <title>{`${title} | ${siteTitle}`}</title>

@@ -17,6 +17,7 @@ export default function Home() {
       description="Expert software engineer specializing in Python, TypeScript, and React. Build scalable backends, dynamic interfaces, and optimize existing systems."
       siteTitle="Software Engineer"
       title="Hamza Erbay"
+      twitterCreator="@hamzaerbay"
     />
     <main>
       <div className={styles.avatar}>
