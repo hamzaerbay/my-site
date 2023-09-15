@@ -9,7 +9,7 @@ import { SEO } from '../components/seo'
 
 
 export default function Home() {
-  const canvasRef = useRef()
+  const canvasRef = useRef<HTMLCanvasElement>(null)
   useEffect(() => {
     if(canvasRef.current) {
       runCanvas(canvasRef.current)
