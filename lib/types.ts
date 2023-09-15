@@ -1,4 +1,5 @@
 export interface Particle {
+  canvas: HTMLCanvasElement;
   x: number;
   y: number;
   radius: number;

@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import runCanvas from "../lib/canvas"
 import Image from 'next/image'
 import styles from '../styles/my-page.module.scss'
@@ -9,8 +9,11 @@ import { SEO } from '../components/seo'
 
 
 export default function Home() {
+  const canvasRef = useRef()
   useEffect(() => {
-    runCanvas()
+    if(canvasRef.current) {
+      runCanvas(canvasRef.current)
+    }
   }, [])
   return <div className={styles.wrapper}>
     <SEO
@@ -47,7 +50,7 @@ export default function Home() {
       <div className={styles['box--two']} />
       <div className={styles['box--three']} />
       <div className={styles['box--four']} />
-      <canvas className={styles.canvas} />
+      <canvas className={styles.canvas} ref={canvasRef} />
     </main>
   </div>
 }

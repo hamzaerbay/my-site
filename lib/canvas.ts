@@ -1,10 +1,10 @@
 import { Particle } from './types'
 import * as utils from './utils'
 
-const createParticle = (x: number, y: number, colors: string[]): Particle => {
+const createParticle = (canvas:HTMLCanvasElement, x: number, y: number, colors: string[]): Particle => {
   const radius = Math.random() * 2 + 1;
-  const canvas = document.querySelector('canvas')!
   return {
+    canvas,
     x,
     y,
     radius,
@@ -38,7 +38,7 @@ const createParticle = (x: number, y: number, colors: string[]): Particle => {
 const init = (canvas: HTMLCanvasElement, colors: string[]) => {
   const particles: Particle[] = [];
   for (let i = 0; i <6; i++) {
-    particles.push(createParticle(canvas.width / 2, canvas.height / 2 - 106, colors));
+    particles.push(createParticle(canvas, canvas.width / 2, canvas.height / 2 - 106, colors));
   }
   return particles;
 };
@@ -55,8 +55,8 @@ const animate = (canvas: HTMLCanvasElement, particles: Particle[]) => {
   requestAnimationFrame(() => animate(canvas, particles));
 };
 
-const runCanvas = (): void => {
-  const canvas = document.querySelector<HTMLCanvasElement>('canvas')!;
+const runCanvas = (canvasElement: HTMLCanvasElement): void => {
+  const canvas = canvasElement;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
